@@ -75,32 +75,32 @@ object AllianceEvent extends Enumeration {
 }
 
 object Alliance {
-  val MAX_MEMBER_COUNT = 12
-  val ESTABLISH_MIN_MEMBER_COUNT = 3
+  val MAX_MEMBER_COUNT = 6
+  val ESTABLISH_MIN_MEMBER_COUNT = 2
 
   val getReputationBonus: (Int => Double) = { (ranking: Int) =>
     if (ranking == 1) {
-      50
+      25
     } else if (ranking == 2) {
-      40
+      18
     } else if (ranking == 3) {
-      35
+      15
     } else if (ranking == 4) {
-      32
+      12
     } else if (ranking == 5) {
-      30
+      10
     } else if (ranking == 6) {
-      28
+      9
     } else if (ranking == 7) {
-      26
+      8
     } else if (ranking == 8) {
-      24
+      7
     } else if (ranking == 9) {
-      22
+      6
     } else if (ranking == 10) {
-      20
+      5
     } else {
-      Math.max(30 - ranking, 5)
+      4
     }
   }
 
