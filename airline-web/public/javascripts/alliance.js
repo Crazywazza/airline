@@ -301,7 +301,7 @@ function updateAllianceBasicsDetails(allianceId) {
 	selectedAlliance = alliance
 	$("#allianceDetails .allianceName").text(alliance.name)
 	if (alliance.status == 'Forming') {
-		$("#allianceDetails .allianceStatus").text(alliance.status + " - need 3 approved members")
+		$("#allianceDetails .allianceStatus").text(alliance.status + " - need 2 approved members")
 	} else {
 		$("#allianceDetails .allianceStatus").text(alliance.status)
 	}
